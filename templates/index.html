@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+</head>
+<body>
+    <h2>Enter your birth year to calculate your age:</h2>
+    <form method="post">
+        <input type="number" name="birth_year" required>
+        <button type="submit">Calculate Age</button>
+    </form>
+    {% if age is not none %}
+        <p>Your age is: {{ age }}</p>
+    {% endif %}
+</body>
+</html>
